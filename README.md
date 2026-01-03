@@ -187,5 +187,3 @@ Data Analytics | Automation | API & Data Validation Background
 This project demonstrates how automation, structured data storage, and validated analytical logic can be combined to produce reliable and scalable supply chain performance insights.
 
 ```
-
----
