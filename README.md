@@ -10,7 +10,8 @@ The solution demonstrates how automation, structured data modeling, and analytic
 
 ## Problem Statement
 
-Supply chain data is often distributed across multiple sources and formats, making manual analysis time-consuming and error-prone.  
+Supply chain data is often distributed across multiple sources and formats, making manual analysis time-consuming and error-prone.
+
 This project addresses the challenge by:
 - Automating data ingestion from external sources
 - Centralizing data in a structured database
@@ -35,16 +36,16 @@ The project follows a layered architecture:
 
 ## Architecture Overview
 
+```text
 External Data Sources
-↓
+        ↓
 n8n (Cloud-Based Automation)
-↓
+        ↓
 PostgreSQL (Supabase)
-↓
+        ↓
 Quadratic (Analytics Layer)
-↓
+        ↓
 Supply Chain KPIs & Insights
-
 
 ---
 
@@ -126,22 +127,20 @@ supply-chain-analytics-ai/
 ├── README.md
 │
 ├── docs/
-│ ├── n8n_setup_web.md
-│ ├── supabase_postgres_setup.md
-│ └── gmail_oauth_setup.md
+│   ├── n8n_setup_web.md
+│   ├── supabase_postgres_setup.md
+│   └── gmail_oauth_setup.md
 │
 ├── analytics/
-│ └── quadratic_prompts.md
+│   └── quadratic_prompts.md
 │
 ├── business/
-│ ├── supply_chain_concepts.md
-│ └── kpi_definitions.md
+│   ├── supply_chain_concepts.md
+│   └── kpi_definitions.md
 │
 ├── Dataset/
-│ 
 │
 ├── screenshots/
-
 
 ---
 
