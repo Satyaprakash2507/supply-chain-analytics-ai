@@ -46,32 +46,40 @@ PostgreSQL (Supabase)
 Quadratic (Analytics Layer)
         ↓
 Supply Chain KPIs & Insights
+````
 
 ---
 
 ## Technology Stack
 
-- **Automation:** n8n (Cloud-based)
-- **Database:** PostgreSQL (Supabase)
-- **Analytics:** Quadratic
-- **Authentication:** OAuth 2.0 (Gmail)
-- **Data Format:** CSV
-- **Domain:** Supply Chain Analytics
+* **Automation:** n8n (Cloud-based)
+* **Database:** PostgreSQL (Supabase)
+* **Analytics:** Quadratic
+* **Authentication:** OAuth 2.0 (Gmail)
+* **Data Format:** CSV
+* **Domain:** Supply Chain Analytics
 
 ---
 
 ## Data Model
 
 The analytical model consists of:
-- **Fact Tables**
-  - Order and order line data
-- **Dimension Tables**
-  - Customers
-  - Products
-  - Targets and reference data
-- **Reference Tables**
-  - Date dimension
-  - Exchange rate table
+
+### Fact Tables
+
+* Order data
+* Order line data
+
+### Dimension Tables
+
+* Customers
+* Products
+* Targets and reference data
+
+### Reference Tables
+
+* Date dimension
+* Exchange rate table
 
 This structure supports efficient aggregation and KPI computation.
 
@@ -89,39 +97,41 @@ This structure supports efficient aggregation and KPI computation.
 
 ## Analytical Logic and KPIs
 
-The project computes the following supply chain KPIs:
+The following supply chain KPIs are computed:
 
-- Total Orders  
-- Total Order Lines  
-- Line Fill Rate  
-- Volume Fill Rate  
-- On-Time Delivery Percentage  
-- In-Full Delivery Percentage  
-- On-Time In-Full (OTIF) Percentage  
+* Total Orders
+* Total Order Lines
+* Line Fill Rate
+* Volume Fill Rate
+* On-Time Delivery Percentage
+* In-Full Delivery Percentage
+* On-Time In-Full (OTIF) Percentage
 
-KPIs are derived using clearly defined business rules aligned with standard supply chain practices.
+All KPIs are derived using clearly defined business rules aligned with standard supply chain practices.
 
 ---
 
 ## Customer and Geographic Analysis
 
 In addition to overall performance metrics, the project includes:
-- Customer-level performance ranking
-- Delivery reliability analysis by customer
-- Geographic segmentation for regional insights
+
+* Customer-level performance ranking
+* Delivery reliability analysis by customer
+* Geographic segmentation for regional insights
 
 ---
 
 ## Security and Access Management
 
-- OAuth 2.0 is used for secure email-based integrations.
-- Credentials are stored securely and are not committed to source control.
-- Database access is restricted to authorized services.
+* OAuth 2.0 is used for secure email-based integrations.
+* Credentials are stored securely and are not committed to source control.
+* Database access is restricted to authorized services.
 
 ---
 
 ## Repository Structure
 
+```text
 supply-chain-analytics-ai/
 │
 ├── README.md
@@ -141,35 +151,41 @@ supply-chain-analytics-ai/
 ├── Dataset/
 │
 ├── screenshots/
+```
 
 ---
 
 ## Key Learnings
 
-- Designed an end-to-end analytics pipeline from ingestion to insights
-- Applied structured data modeling for analytical use cases
-- Implemented standardized supply chain KPIs
-- Combined automation with analytical validation
-- Applied domain knowledge to interpret operational data
+* Designed an end-to-end analytics pipeline from ingestion to insights
+* Applied structured data modeling for analytical use cases
+* Implemented standardized supply chain KPIs
+* Combined automation with analytical validation
+* Applied domain knowledge to interpret operational data
 
 ---
 
 ## Usage
 
 This repository serves as:
-- A reference implementation for supply chain analytics
-- A demonstration of automation-driven data pipelines
-- A portfolio project showcasing analytics and domain understanding
+
+* A reference implementation for supply chain analytics
+* A demonstration of automation-driven data pipelines
+* A portfolio project showcasing analytics and domain understanding
 
 ---
 
 ## Author
 
-**Satyaprakash Singh Yadav**  
-Data Analytics | Automation | API & Data Validation Background  
+**Satyaprakash Singh Yadav**
+Data Analytics | Automation | API & Data Validation Background
 
 ---
 
 ## Conclusion
 
 This project demonstrates how automation, structured data storage, and validated analytical logic can be combined to produce reliable and scalable supply chain performance insights.
+
+```
+
+---
